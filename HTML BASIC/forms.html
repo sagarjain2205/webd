@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOARD REGISTRATION</title>
+</head>
+<body>
+    <h4> REGISTRATION FORM :</h4>
+    <form action="/action.php">  <!--action form ka backend wala part hai jo pura form scan karta haii-->
+        <input type="text" placeholder="type username">   <!--text type se text visible hota hai-->  <!--placeholder wo lines hoti hai jo ek dabbe me already likhi dikhti and click krte hi gyab ho jati h-->
+        <input type="password" placeholder="type password">  <!--type password hide text-->
+        <BR/>
+        <br/>
+        <h4> SELECT YOUR CLASS</h4>
+<input type="radio" value="CLASS X" name="class"> CLASS X  <!--radio is for selecting one option-->
+<input type="radio" value="CLASS XII" name="class"> CLASS XII
+ </form>
+<br/>
+<br/>
+<H3>SELECT YOUR BOARD:</H3>
+ <form action="/action.php"> 
+    <label for="101">    <!--label help karta hai radio option ke word p click krke bhi checkbox tick ho jayega-->
+        <input type="radio" value="CLASS XII" name="class" id="101"> CBSE   <!--value user ko nhi dikhta hume bas last wala name dikhta hai . ye backend pe kam karta hai jab hum ek option tick krte hai to uski value kisme jayegi ye dekhta hai-->
+    </label>
+
+    <label for="102">
+        <input type="radio" value="CLASS XII" name="class" id="102"> RAJASTHAN BOARDS
+    </label>
+ 
+ <BR/>
+ <br/>
+ <h3> SELECT YOUR SUBJECTS:</h3>
+ <label for="maths">
+    <input type="checkbox" value="maths" name="subjects" id="10"> MATHS  <!--type checkbox is used for selecting multiple values-->
+</label>
+<label for="physics">
+    <input type="checkbox" value="physics" name="subjects" id="11"> PHYSICS  <!--id help karti hai ek pure group main se ek elemnt ko dundhne me-->
+</label>
+<label for="chemistry">
+    <input type="checkbox" value="chemistry" name="subjects" id="12"> CHEMISTRY
+</label>
+<label for="english">
+    <input type="checkbox" value="english" name="subjects" id="13"> ENGLISH
+</label>
+<label for="tourism">
+    <input type="checkbox" value="tourism" name="subjects" id="14"> TOURISM
+</label>
+<br>
+<br>
+<h3> SELECT YOUR CITY:</h3>
+<select name="city">     <!-- select forms me box ke andar option deta hai-->
+    <option value="delhi" >delhi</option>
+    <option value="rajasthan"> rajasthan</option>
+    <option value="pune" >pune</option>
+    <option value="mumbai" >mumbai</option>
+    <option value="madhya pradesh" >madhya pradesh </option>
+</select>
+<br/>
+<br/>
+<BR/>
+<textarea name="feedback" id="200" placeholder="please give your valueable feedback here !" rows="5" column="6" > FEEDBACK</textarea> <!-- text area forms me box jo hote h uske lie use karte hai-->
+<BR>
+    <input type="submit" value="submit">     <!--for submit -->
+</form>
+</body>
+</html>
