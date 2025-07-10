@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object fit and position</title>
+
+    <style>
+
+
+.container{
+    height: 488px;
+    width: 466px;
+
+    border: 2px solid black;
+    background-color: azure;
+
+}
+
+img{
+    width: 466px;
+    height: 488px;
+    /* object-fit: cover;   /*it will cut img and fill it to box*/
+    /* object-position: bottom right;   (setting position of img to be cut) */ 
+    /* object-fit: contain;  (leave side areas to fit full photo) */
+    /* object-fit: fill;   (it is by default . set img size as we have given) */
+
+
+    /* object-fit: contain;
+    object-position: 30px 30px; */             /*(photo will leave blank space acc to size given)*/
+
+    background-image: "https://www.seedhemaut.com/wp-content/uploads/2023/08/Seedhe-Maut-Lunch-Front-Cover-Art-4K.png" ;
+    background-position: center center;
+ /* it will give bg image so that no one can download it. or we need image as a bg */
+  /* if bg photo is small then it will be repeated . to stop it use command */
+    background-repeat: no-repeat;
+
+    /* background-clip: content-box; ( bg-clip properties gives info about content and thier border ) */
+
+}
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        <img src="https://www.seedhemaut.com/wp-content/uploads/2023/08/Seedhe-Maut-Lunch-Front-Cover-Art-4K.png" alt="">     
+
+
+    </div>
+</body>
+</html>

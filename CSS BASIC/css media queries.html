@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css media queries</title>
+
+    <style>
+   body{
+     background-color: rgb(96, 233, 233) ;
+   }
+
+   
+       /* @media not|only mediatype and (expressions) {
+            CSS-Code;
+        } */
+ @media only screen and (max-width : 455px){
+  body{
+    background-color: rgb(219, 79, 172);  /* bcs of this 455px se upar color screen ka aqua rhega lekin jaise hi screen width kam hui 455px se means mere phone ki screen ise pink dikhayegi*/
+  }
+ }
+
+   @media screen and (orientation: portrait) {   /* can be done for landscape also . responsive border will be added .*/
+            body{
+                border: 2px solid purple;
+            }
+        }
+
+   .boxes{
+                flex-direction: column;
+            }
+        
+   .boxes{
+            display: flex;
+        }
+
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>
+  hey my name is sagar jain!
+    </div>
+
+      <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
+
+<!-- media query is used for responsive design -->
+ <!--it shows ki mera content diff screen pe kaise dikhega by changing color nd design acc to screen width-->
+
+ <!-- page inspect karke screen ka size change karke dekho -->

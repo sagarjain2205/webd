@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS VARIABLES</title>
+</head>
+
+<style>
+
+    /* global variable  */
+      :root{
+            --color: rgb(255, 0, 247);
+            --seccolor: rgb(231, 164, 246);
+            --defpad: 23px; /*  default padding var */
+            --defop: 0.1;   /*opacity*/
+      }
+       
+       *{
+            margin: 0;
+            padding: 0;
+        }
+
+       .nav{
+         background-color: var(--color);   /* global variable se color inherit krlia*/
+       }
+
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);   /*from this we can set border color too*/
+        }
+
+        ul li:first-child{
+         --color: rgb(23, 192, 235) ;    /*  this is local var . it will override global var and give color of local  */
+            background-color: var(--color);
+             /* background-color: var(--color) , blue ;    use this when color is not defined in global var    */
+        }
+
+        .container{
+            background-color: var(--seccolor);  /* global variable se color inherit krlia*/
+        }
+</style>
+
+
+<body>
+
+      <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About </li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    
+ <br>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse assumenda qui ad dolorem consequuntur facilis aliquam. Unde sapiente ipsam quaerat, at debitis nesciunt, totam nulla quae ad ipsum veniam sed eligendi rem deserunt quos maiores modi. Illo eaque expedita natus iusto nostrum dolorem quos est.
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transitions</title>
+
+    <style>
+  .container{
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 20vh;
+        }
+
+        .box{
+            background-color: aquamarine;
+            width: 5vw;
+            height: 4vh;
+
+            /* 4 IMPORTANT PROPERTIES OF TRANSITION :  */
+            /* check transition by turning on off .translate class button from inspect view  */
+            transition-property: transform ;
+            transition-duration: 3s ;             /*(animation kitni der tak chlega)*/
+            transition-timing-function: ease-in-out ;
+            transition-delay: 1s ;                /* (animation kitni der bad chlega) */
+
+        }
+          
+
+          .translate1{
+        transform: translateX(10vh) translateY(10vh);
+       } 
+
+
+       /* COLOR CHANGING PROPERTY : 
+       DOUBT- AFTER REMOVING TRANSLATE2 FROM INSPECT ,   CODE IS WORKING */
+
+ .container2{
+     background-color: antiquewhite;
+            width: 50vw;
+            height: 20vh;
+
+ }
+      .box2{
+           background-color: aquamarine;
+            width: 5vw;
+            height: 4vh;
+            transition-property: background-color,  transform ;
+            transition-duration: 3s ;           
+            transition-timing-function: ease-in-out ;
+              /* transition-timing-function: cubic-bezier(0.22, 0.43, 0, 0.99);  (customise in inspect optn)  */
+            transition-delay: 1s ; 
+        
+      }
+      
+
+     .translate2{
+         transform: translateX(10vh) translateY(10vh);
+         background-color: blue;
+     }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+       <div class="box translate1"> </div>
+       
+    </div>
+
+
+    <br>
+    <br>
+
+
+<div class="container2">
+     <div class="box2 translate2   "> </div>    <!--remove translate 2 from here for  color changing transition in box 2 bcs we have already given bg color command in it and when searching page it will give the color we initialised not the transition -->
+</div>
+</body>
+</html>1

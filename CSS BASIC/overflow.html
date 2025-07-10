@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow property</title>
+<style>
+
+     .box {
+            width: 20vw;
+            height: 20vh;
+            border: 2px solid black;
+            overflow: auto; /* automatically size adjust karke scroll bar dega*/
+            /* overflow: scroll; this will give horizontal and vertical scroll bar even if not needed */
+            white-space: nowrap;   /* ye sari line horizontal kardegi and only horizontal scroll bar dega*/ 
+            /* text-overflow: ellipsis;   ise bas text ke last me dots ajyagi  */
+            overflow-x: hidden ;   /*manually we can hide oe unhde x and y co ordinate type*/
+            overflow-y: scroll;
+
+             /* overflow: auto hidden;   instead of writting seprate x and y we can use this . ( x , y)   */
+     }
+
+
+</style>
+
+</head>
+<body>
+    
+     <div class="box">
+        I am a good boy and I love to write Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta iure amet
+        unde voluptas nihil vero, maxime esse quis quos natus rem, earum aspernatur quasi aut ea commodi nostrum
+        voluptate! Sint rerum nostrum perferendis sapiente explicabo perspiciatis, ut magni? Aspernatur, provident
+        dolorum unde corporis doloribus rem!
+    </div>
+
+</body>
+</html> 

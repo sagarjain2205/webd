@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLOAT AND CLEAR</title>
+</head>
+<style>
+
+.cards{
+            border: 2px solid black;
+            display:flow-root;  /*image always overflow by using this image will be fit in container*/
+        }
+        
+img{
+            float:left;  /* ise meri image keft me ajayegi and text right side pe ayega */
+        }
+ /* or bhi tarike hai overflow se bachne ke overflow techniques like auto also can be used */
+
+ .card{
+            border: 2px solid red;
+        }
+
+
+/* phele mera text left side ki image ki wjha se kat rha tha but not after applying clear keyword mera text float i.e cut nhi hoga balki niche ajayega  */
+/* we can clear from left/right/both */
+.card:nth-child(3){
+    background-color: azure;
+    clear:left;
+}
+
+
+
+</style>
+
+
+<body>
+    
+  <!-- shortcut-  .card>.card*3 -->
+    <div class="cards">
+          <img src="https://media.istockphoto.com/id/928826678/photo/two-men-relaxing-and-fishing.jpg?s=2048x2048&w=is&k=20&c=fSG5LG9kxLNzjG9_YI1bXdz3-gD7UW2e2bd9arD5Vm8=" alt="" width="230">
+        <div class="card">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, adipisci ea eos nemo eius corporis rem. Suscipit praesentium officiis, vero mollitia obcaecati aliquam quo nemo sequi excepturi esse reiciendis nesciunt!
+        </div>
+        <div class="card"> 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus similique adipisci, magnam ipsam dolorem asperiores ipsum assumenda delectus quia exercitationem, nemo voluptatem earum fugit iste! Ex recusandae ea magni exercitationem odio corrupti! Sequi quae et molestias aut doloribus, tempore porro eos at vero itaque animi odio accusantium, fuga omnis suscipit nesciunt iste vel repellendus fugiat optio corrupti quis sapiente? Laboriosam aspernatur numquam exercitationem enim. Pariatur ratione, a labore nisi esse quia quae. Cupiditate quas, nostrum consequuntur exercitationem, corrupti asperiores sunt architecto optio doloremque possimus recusandae corporis? Numquam obcaecati repudiandae, voluptates ipsum tempora earum consectetur maxime dolorem laborum sed soluta consequuntur suscipit vel voluptatum omnis alias et repellat ducimus culpa ratione tempore officiis neque. Debitis corporis reiciendis pariatur deleniti eaque velit, reprehenderit delectus expedita quibusdam. Culpa maxime fuga eos repellendus beatae qui magni quidem autem aliquid. Dignissimos obcaecati quia voluptas, dolores aperiam iure nisi sed deserunt explicabo minima earum error hic, nesciunt, incidunt quod officia! Et similique maiores quae ullam, commodi expedita voluptatem doloremque necessitatibus placeat velit porro ab ex quos officiis quis beatae incidunt quaerat tempora laboriosam error accusantium fugit, in amet dolorem? Alias consequuntur facere repellat maiores cumque, voluptate voluptatibus, quae omnis libero porro qui magni minima sint eveniet? </div>
+        <div class="card"> card 3 </div>
+    </div>
+
+
+</body>
+</html>

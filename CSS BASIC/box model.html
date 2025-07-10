@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX</title>
+    <style>
+        *{      /*universal selector */
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin:35px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;   /* it auto adjust to total given hieght and width */
+        }
+        .box2{
+            color:red;
+            padding: 10px;
+            margin:25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        /* margin collapse - 2 box ke bich me jo badi margin hogi whi unka gap hoga */
+        .box3{
+            color: bisque;
+            padding: 40px;
+            margin:55px;
+            border: 2px solid rgb(18, 18, 20);
+            height: 300px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">I am a box</div> <!-- kisi bhi elemt ko ek se jyada class dene ke lie bich me gap dena padta hai eg- "box box1"-->
+    <div class="box box2">I am another box</div>
+    <div class="box box3">I am 3rd box</div>
+    <br>
+    <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png" alt="css box details" height="300px">
+</body>
+</html>

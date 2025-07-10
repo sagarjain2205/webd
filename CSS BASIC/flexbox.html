@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css flexbox</title>
+
+<style>
+
+    /* VERY IMPORTANT - THESE PROPERTIES ONLY WORK IN CONTAINER */
+
+  .container {
+            border: 2px solid red;
+            display:flex;
+            height: 70vh;
+            align-items: center;      /* vertically center me ajayenge boxes*/   /* used when boxes are in one line  */
+            justify-content: center;  /* horizontally center me ajayenge boxes*/
+            
+            align-content: center;  /* used when thier are  multiple  rows of boxes i.e they are wrapping */
+
+            /* THERE IS NO JUSTUFY-ITEMS IN FLEXBOX */
+
+            /* flex-direction: column-reverse; */
+            flex-direction:row;    /*we can set flex direction*/
+
+
+            flex-wrap: wrap;   /* prevent overflow and give diff view like gallery view*/
+
+             flex-flow: row wrap; /* for making short syntax - <'flex-direction'> || <'flex-wrap'>*/
+            /* gap: 30px; 
+            row-gap: 40px;
+            column-gap: 10px; */
+            gap: 40px 10px;  /*  for making gap property short syntax - <'row-gap'> <'column-gap'> */
+  }
+
+  /* both align item and justify conent have diff property like center , end , start, manymore can be seen using inspect option  */
+   .item {  
+            /* flex-grow: 1; */    /*flex boxes 1 se grow karenge . by default size 0 hota hai */
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            margin: 4px;
+            background-color: rgb(127, 198, 231);
+        }
+       .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+
+/* default order 0 hota hai . jitna kam order wo item phle ayega , jiska order jyada wo bad mai ayega */
+/* 0 tha to sab line wise the maine 4 or 66 ko order 1 dia to usme 4 chota tha to 4 phele print hua  */
+
+    .item1{  
+            /* flex-grow: 2; */   /* bcs of it mera 1st item ka size 2 se grow hoga baki sab 1 se bcs of command in container */
+            /* flex-shrink: 2; */   /* bcs of it mera 1st item ka size 2 se grow hoga */
+            align-self: flex-end;  /* ye particular item pe lagta hai or uski position khi bhi set kar skte hai */
+        }
+
+</style>
+</head>
+
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item order-1">66</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </main>
+
+
+    
+</body>
+</html>

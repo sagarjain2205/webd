@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonts and colors</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap');
+        h1 {
+            font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        p {
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: 'Baloo Bhai 2', sans-serif;
+            font-size: 20px; 
+            line-height: 2;   /*line ke bich ki space*/
+            /* font-style:italic;
+            font-weight: 500;  */
+            
+        }
+        h2{
+            text-align: center;
+            text-transform: capitalize ;  /*har word ka 1st letter capital*/
+            text-transform: uppercase;    /* pura capital*/
+            /*text-transform: lowercase;*/     /* pura small*/
+            text-decoration: underline;   
+            text-decoration-color: blue;
+            /* text-decoration-style: dotted; */
+            text-decoration-thickness: 7px ;
+            /* text-indent: 45px; */   /*word ko page ke bich me ya side me likhne ka dist.*/
+        }
+        .lorem{
+            border: 1px solid red;
+            width: 500px;
+            word-break: break-all;  /*last word ko break krkr niche likh dega*/
+            /* text-overflow: ellipsis;
+            overflow: hidden; */     /*hiding last text while overflowinf from box*/
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- https://codepen.io/web-dot-dev/pen/yLojraG -->   <!--font famly designs-->
+        <!-- https://codepen.io/web-dot-dev/pen/ZELGraM -->  <!--css colors-->
+        <h1>Fonts</h1>
+        <h2>about Fonts</h2>
+        <p>This is a video on fonts</p>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sequi accusamus quas itaque molestias dolorem quisquam quod, adipisci maxime dolore, mollitia illo officia deserunt voluptatem iure qui. Fugit aliquam possimus aperiam commodi eum amet veniam at vel. Necessitatibus asperiores eos amet laborum dolor, ipsum porro!</p>
+    </div>
+    <br>
+    <h2 style="color:rgb(46, 131, 91)"> about colors</h2>
+    <p> let's learn about colors : </p>
+    <p>
+        Color can be represented in:
+        <ol>
+            <li>Color Keywords</li>
+            <li>Hex Color Code</li>     <!--color: #0BEE0B; -->  <!--hex site se kissi bhi color ka code copy krlo-->
+            <li>RGB</li>             <!-- color: rgb(76, 125, 59);  -->
+            <li>RGBA</li>               <!--color: rgba(255, 22, 5, 0.175)-->   <!--last one denotes to alpha which is measure of opacity-->
+            <li>HSL</li>                 <!--  color: hsl(130, 61%, 44%);-->
+        </ol>
+
+    </p>
+
+</body>
+</html>

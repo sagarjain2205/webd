@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYLING LIST</title>
+  <style>
+        .nav1 ul li{
+            list-style: devanagari;   /*style can be chng using inspect */
+            /*list-style-type: "👌"; */  /* with this we can add emoji as marker*/
+             /* background-color: yellowgreen;    ye sirf item ko color karega mark ko nahi */
+             /* list-style-position: inside;         ye mark ko bhi color kardeaga */
+             border : 2px solid rgb(139, 9, 226);
+             list-style: disc inside url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif");
+             /* list-style-image: url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif");  for image as a marker */
+        }
+
+        .nav2 ul{
+         list-style: none;
+        display: flex;    /*ise sab horizontal chla jayega*/
+         padding: 25px;
+        }
+        .nav2 ul li {
+  padding: 0 10px;
+}
+
+    </style>
+
+</head>
+<body>
+
+      <nav class="nav1">
+        <ul>
+            <li>eena</li>
+            <li>meena</li>
+            <li>deeka</li>
+        </ul>
+    </nav>
+    
+<br>
+
+<nav class="nav2">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+
+</body>
+</html>
+
+<!-- list shows display: list item
+ means list have one marker and one item  -->
+
+ <!-- <-nav> is used when we add url to list-->

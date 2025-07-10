@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css sizing </title>
+    <style>
+
+        *{
+            margin:0;     /* shortcut m.0  */
+            padding:0 ;   /* shortcut p.0  */
+        }
+
+          /*  html{
+            font-size: 12px;
+        } */   
+         
+        /* html is a root element . css size show inheritence ise use krne se pure html page ka size 12 px ho jayega . */
+
+
+    .box {
+            box-sizing: border-box; /* ise horizontal  scroll bar chla jata hai . box ko horizontally fit kardeta hai */
+            border: 2px solid black;
+            /* width: 2048px; */      /* px - pixel (196 inch defaultP) horizontal */
+            width: 80vw;   /* vw- viewport width - automatically har size ki screen p fit kardega box ki width ko . horizontal scroll nhi ata but if we inc. size larger than screen width tab ayega scroll */
+            height: 10vh;   /*view horizontal - viewport horizontal view ko priority dega */
+            margin: auto;  /* center main le ata hai . only for block level not for inline  */
+            background-color: aquamarine;
+        }
+    
+           .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            /* height: 80vh; */     /* viewport ki 80 percent hieght le lega */
+            min-height: 80vh;   
+            margin: 23px auto;   /* 23px top bottom ki margin hai . space deke auto use karte hai, auto left right se margin kardega */
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+
+    .container p{
+        font-size: 2em;   /* css size inherit karta hai . by default font size 16 px hota hai . by using em - me jo value em ko dunga ye mere given font size se multiply ho jayegi*/
+     /* font-size: 2rem;     root element ke lie (rem) use hota hai. ye root element ke size me mltiply hoga */
+        border: 2px solid red;  /* parent ka width 50 percent leke text ko border dedega*/ 
+            width: 50%;
+    }
+
+    /* width percent - ye parent ki width 50 percent kardega */
+     .mycont{ 
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+             color: rgb(0, 0, 0);
+            font-size: 22px;
+           /* width: 100vmin ; */  /*vmin for comp = hieght means vmin=vh*/
+            width: 80vw;
+     }
+
+    </style>
+</head>
+<body>
+    
+ <div class="box">
+        This is a box
+    </div>
+    
+    <div class="container" >
+                <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis necessitatibus quia quod iste dolorem
+            voluptatem fuga quidem aspernatur. Nihil ipsa sint quae, beatae explicabo saepe impedit laboriosam magni
+            cupiditate expedita voluptates consequatur odit veritatis dolorum doloribus. Iure nemo odit dicta, delectus,
+            modi reiciendis maiores ut quo adipisci libero quam laboriosam nihil voluptate natus nobis earum ad?
+        
+        </p>
+         
+ </div>
+
+ <div class="mycont">
+        I am another container
+    </div>
+
+</body>
+</html>
+
+<!-- phone vmin = width 
+     computer vmin = hieght -->
